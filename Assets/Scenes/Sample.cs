@@ -53,7 +53,7 @@ public class Sample : MonoBehaviour
     }
 
 
-void OnGUI()
+    void OnGUI()
     {
         GUILayout.Space(150);
         GUILayout.BeginHorizontal();
