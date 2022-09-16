@@ -1,6 +1,6 @@
 # FastBugly
 
-快速接入bugly到unity，支持Unity2021（Unity5以上版本都支持）
+快速接入bugly到unity，支持Unity2021（Unity5以上版本都支持,当前测试工程为2021.3.9f1）
 ### 初衷
 鹅厂提供的官方demo工程打包后台也查不到日志，N年不更新，为此本人做了部分修改测试，提供一个快速接入工程的demo。
 
