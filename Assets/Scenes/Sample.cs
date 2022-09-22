@@ -6,7 +6,7 @@ public class Sample : MonoBehaviour
 {
     void Start()
     {
-
+        //初始化bugly的appid，在bugly创建获取
 #if UNITY_IOS
         BuglyAgent.InitWithAppId ("your ios app id");
 #elif UNITY_ANDROID
