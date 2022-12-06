@@ -49,8 +49,7 @@ public static class XCodePostProcessBuild
 
     static void SetBugly(string frameworkTarget,PBXProject pbxProject, string pathToBuiltProject)
     {
-        var buglyPath = "Bugly";
-        AddDirectory(pbxProject, pathToBuiltProject, $"{buglyPath}/Plugins/BuglyPlugins/iOS", "Bugly", null);
+        AddDirectory(pbxProject, pathToBuiltProject, $"Plugins/BuglyPlugins/iOS", "Bugly", null);
         pbxProject.AddFileToBuild(frameworkTarget, pbxProject.AddFile("Bugly/Bugly.framework", "Bugly/Bugly.framework", PBXSourceTree.Source));
         pbxProject.AddFileToBuild(frameworkTarget, pbxProject.AddFile("Bugly/BuglyBridge/libBuglyBridge.a", "Bugly/libBuglyBridge.a", PBXSourceTree.Source));
         pbxProject.AddFileToBuild(frameworkTarget, pbxProject.AddFile("Bugly/BuglyBridge/BuglyBridge.h", "Bugly/BuglyBridge.h", PBXSourceTree.Source));
